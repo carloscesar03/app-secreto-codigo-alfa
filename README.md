@@ -1,38 +1,24 @@
 # Código Alfa - Landing Page
 
-Esta é a landing page de vendas do produto **Código Alfa**. O projeto foi construído utilizando React e Tailwind CSS, otimizado para alta conversão e carregamento rápido.
+Esta é a landing page de vendas do produto **Código Alfa**. O projeto utiliza React, Vite e Tailwind CSS.
 
 ## 🚀 Como colocar no ar (Vercel + GitHub)
 
-Como este projeto usa importações ES Modules via CDN (esm.sh), ele não precisa de um processo de "Build" complexo (npm run build). Ele funciona nativamente no navegador.
+O projeto está configurado com **Vite**, o que significa que a Vercel vai reconhecê-lo automaticamente como um projeto React moderno.
 
 ### Passo 1: GitHub
-1. Crie um novo repositório no GitHub.
-2. Faça o upload de **todos** os arquivos deste projeto para lá.
+1. Faça o upload de **todos** os arquivos novos para o seu repositório (incluindo `vite.config.ts`, `tsconfig.json` e o novo `package.json`).
 
 ### Passo 2: Vercel
-1. Crie uma conta na [Vercel](https://vercel.com).
-2. Clique em **"Add New..."** -> **"Project"**.
-3. Selecione o repositório do GitHub que você acabou de criar.
-4. **Configuração de Build (Importante):**
-   - Framework Preset: **Other** (ou deixe vazio se ele detectar HTML).
-   - Build Command: Deixe vazio.
-   - Output Directory: Deixe vazio (ou `.` se pedir).
+1. Na Vercel, importe o projeto do GitHub.
+2. **Framework Preset:** A Vercel deve detectar **Vite** automaticamente.
+   - Se não detectar, selecione **Vite** na lista.
+3. **Build Command:** `vite build` (Automático)
+4. **Output Directory:** `dist` (Automático)
 5. Clique em **Deploy**.
 
-## 🛠 Estrutura do Projeto
+## 🛠 Estrutura
 
-- `index.html`: Arquivo principal. Contém o Pixel do Facebook e configurações de importação.
-- `App.tsx`: Componente raiz que organiza as seções da página.
-- `components/`: Pasta contendo todas as seções da página (Hero, Benefícios, Prova Social, Preço, etc).
-- `vercel.json`: Arquivo de configuração para garantir que a Vercel sirva o site corretamente.
-
-## 📈 Pixel e Rastreamento
-
-O Pixel do Facebook já está instalado no `<head>` do arquivo `index.html` com o ID `869387576093655`.
-
-## 🎨 Design
-
-- **Estilo:** Minimalista / Dark Mode & High Contrast.
-- **Cor de Conversão:** Laranja (`#f97316`).
-- **Fonte:** Montserrat (Google Fonts).
+- `index.html`: Ponto de entrada.
+- `index.tsx`: Renderização do React.
+- `vite.config.ts`: Configuração do bundler.
