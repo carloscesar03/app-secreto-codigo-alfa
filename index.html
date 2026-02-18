@@ -3,35 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App Secreto Código Alfa</title>
+    
+    <!-- SEO Principal -->
+    <title>Código Alfa | O App Secreto de Atração</title>
+    <meta name="description" content="Descubra o sistema prático de comportamento e comunicação estratégica aplicável no mesmo dia. Gere atração sem precisar mudar quem você é.">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codigoalfa.com/">
+    <meta property="og:title" content="Código Alfa | Acesso Exclusivo">
+    <meta property="og:description" content="Pare de ser ignorado. Descubra o protocolo de postura e comunicação que gera atração imediata.">
+    <meta property="og:image" content="https://i.postimg.cc/R0SBJJGb/Mockup-App-Secreto-Codigo-Alfa-(1).png">
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codigoalfa.com/">
+    <meta property="twitter:title" content="Código Alfa | Acesso Exclusivo">
+    <meta property="twitter:description" content="Pare de ser ignorado. Descubra o protocolo de postura e comunicação que gera atração imediata.">
+    <meta property="twitter:image" content="https://i.postimg.cc/R0SBJJGb/Mockup-App-Secreto-Codigo-Alfa-(1).png">
+
+    <!-- Tailwind CSS (via CDN para simplicidade) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Configuração Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#0f172a',
+                accent: '#f97316', // Orange for conversion
+                light: '#f8fafc',
+                gold: '#eab308'
+              }
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
+    
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-
-      fbq('init', '869387576093655');
-      fbq('track', 'PageView');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '869387576093655');
+    fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=869387576093655&ev=PageView&noscript=1"
+    /></noscript>
     <!-- End Meta Pixel Code -->
-  </head>
-
-  <body>
-    <!-- Meta Pixel (noscript fallback) -->
-    <noscript>
-      <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=869387576093655&ev=PageView&noscript=1" />
-    </noscript>
-
-    <!-- Vite App -->
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.574.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-dark text-slate-900 antialiased selection:bg-brand-accent selection:text-white">
     <div id="root"></div>
-
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Entry Point do Vite -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
