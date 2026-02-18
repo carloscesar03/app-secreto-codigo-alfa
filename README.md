@@ -1,24 +1,28 @@
 # Código Alfa - Landing Page
 
-Esta é a landing page de vendas do produto **Código Alfa**. O projeto utiliza React, Vite e Tailwind CSS.
+Esta é a landing page de vendas do produto **Código Alfa**.
 
-## 🚀 Como colocar no ar (Vercel + GitHub)
+## 🚨 SOLUÇÃO DE ERROS NO DEPLOY (VERCEL)
 
-O projeto está configurado com **Vite**, o que significa que a Vercel vai reconhecê-lo automaticamente como um projeto React moderno.
+Se você ver o erro `No Output Directory named "public" found`, siga estes passos:
 
-### Passo 1: GitHub
-1. Faça o upload de **todos** os arquivos novos para o seu repositório (incluindo `vite.config.ts`, `tsconfig.json` e o novo `package.json`).
+1. Vá no painel da **Vercel** > **Settings** (do seu projeto) > **Build & Development**.
+2. No campo **Framework Preset**, selecione **Vite**.
+3. Verifique se o **Output Directory** mudou automaticamente para `dist`.
+   - Se não, clique em "Override" e digite: `dist`
+4. Vá na aba **Deployments** e clique em **Redeploy** no último commit.
 
-### Passo 2: Vercel
-1. Na Vercel, importe o projeto do GitHub.
-2. **Framework Preset:** A Vercel deve detectar **Vite** automaticamente.
-   - Se não detectar, selecione **Vite** na lista.
-3. **Build Command:** `vite build` (Automático)
-4. **Output Directory:** `dist` (Automático)
-5. Clique em **Deploy**.
+## 🚀 Como colocar no ar
+
+1. Faça o upload dos arquivos para o GitHub.
+2. Conecte na Vercel.
+3. Se a Vercel não detectar automaticamente:
+   - **Build Command:** `vite build`
+   - **Output Directory:** `dist`
+   - **Install Command:** `npm install`
 
 ## 🛠 Estrutura
 
-- `index.html`: Ponto de entrada.
+- `index.html`: Ponto de entrada (sem importmap, usando Vite).
 - `index.tsx`: Renderização do React.
 - `vite.config.ts`: Configuração do bundler.
