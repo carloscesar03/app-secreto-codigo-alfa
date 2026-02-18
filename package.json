@@ -1,0 +1,22 @@
+{
+  "name": "codigo-alfa-landing",
+  "version": "1.0.0",
+  "description": "Landing page de alta conversão para o produto Código Alfa.",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "serve",
+    "build": "echo 'No build step required for this setup' && exit 0"
+  },
+  "keywords": [
+    "landing-page",
+    "react",
+    "marketing"
+  ],
+  "author": "Código Alfa",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "lucide-react": "^0.564.0"
+  }
+}
