@@ -22,7 +22,7 @@
     <meta property="twitter:description" content="Pare de ser ignorado. Descubra o protocolo de postura e comunicação que gera atração imediata.">
     <meta property="twitter:image" content="https://i.postimg.cc/R0SBJJGb/Mockup-App-Secreto-Codigo-Alfa-(1).png">
 
-    <!-- Tailwind CSS (via CDN para simplicidade) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Fontes -->
@@ -59,7 +59,7 @@
       }
     </style>
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (Script parte fica no Head) -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -72,9 +72,6 @@
     fbq('init', '869387576093655');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=869387576093655&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
   <script type="importmap">
 {
@@ -90,6 +87,11 @@
 </script>
 </head>
   <body class="bg-brand-dark text-slate-900 antialiased selection:bg-brand-accent selection:text-white">
+    <!-- Meta Pixel Code (Noscript movido para o Body para evitar erro de build) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=869387576093655&ev=PageView&noscript=1"
+    /></noscript>
+    
     <div id="root"></div>
     <!-- Entry Point do Vite -->
     <script type="module" src="/index.tsx"></script>
