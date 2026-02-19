@@ -22,7 +22,7 @@ export const FinalCTA: React.FC = () => {
           
           <p className="text-2xl font-black text-white mb-8 uppercase tracking-widest">Agora ou nunca.</p>
           
-          <Button fullWidth pulse variant="primary" className="text-xl shadow-brand-accent/40" href="https://pay.wiapy.com/I2kF_4oluZ">
+          <Button fullWidth pulse variant="primary" className="text-xl shadow-brand-accent/40" href="https://lastlink.com/p/C86FF65EE/checkout-payment/">
             COMEÇAR MINHA TRANSFORMAÇÃO AGORA
           </Button>
         </div>
