@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
 
         {/* CTA */}
         <div className="flex flex-col items-center gap-4">
-          <Button fullWidth className="md:w-auto text-xl py-5 px-10 shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:shadow-[0_0_50px_rgba(249,115,22,0.5)]" pulse href="https://pay.wiapy.com/I2kF_4oluZ">
+          <Button fullWidth className="md:w-auto text-xl py-5 px-10 shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:shadow-[0_0_50px_rgba(249,115,22,0.5)]" pulse href="https://lastlink.com/p/C86FF65EE/checkout-payment/">
             QUERO DESBLOQUEAR AGORA
           </Button>
           <p className="text-slate-500 text-xs mt-2 flex items-center gap-1">
