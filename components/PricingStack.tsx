@@ -55,7 +55,7 @@ export const PricingStack: React.FC = () => {
               </div>
             </div>
 
-            <Button fullWidth pulse className="text-xl" href="https://pay.wiapy.com/I2kF_4oluZ">
+            <Button fullWidth pulse className="text-xl" href="https://lastlink.com/p/C86FF65EE/checkout-payment/">
               QUERO ATIVAR O CÓDIGO ALFA
             </Button>
           </div>
